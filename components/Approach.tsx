@@ -2,7 +2,8 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
+import dynamic from "next/dynamic";
+const CanvasRevealEffect = dynamic(() => import("@/components/ui/CanvasRevealEffect").then((m) => m.CanvasRevealEffect), { ssr: false });
 
 const Approach =()=> {
     return (
@@ -11,20 +12,20 @@ const Approach =()=> {
                 My <span className="text-purple"> approach</span>
             </h1>
         <div className="my-20 flex flex-col lg:flex-row items-center justify-center  gap-4">
-            <Card 
-            title="Plannig and Strategy" 
-            icon={<AceternityIcon order='Phase 1'/>} 
-            description=" Description text should be placed inside"
+            <Card
+            title="Planning and Strategy"
+            icon={<AceternityIcon order='Phase 1'/>}
+            description="We start with a thorough discussion to define goals, scope, and success criteria — turning ideas into a clear, actionable roadmap."
             >
             <CanvasRevealEffect
                 animationSpeed={5.1}
                 containerClassName="bg-emerald-900"
             />
             </Card>
-            <Card 
-            title="Second Phase" 
+            <Card
+            title="Development and Execution"
             icon={<AceternityIcon order='Phase 2'/>}
-            description=" Description text should be placed inside"
+            description="With the plan locked in, I build iteratively — writing clean, maintainable code and sharing progress at every milestone."
             >
             <CanvasRevealEffect
                 animationSpeed={3}
@@ -35,12 +36,12 @@ const Approach =()=> {
                 ]}
                 dotSize={2}
             />
-            
+
             </Card>
-            <Card 
-            title="Final Phase" 
+            <Card
+            title="Testing and Launch"
             icon={<AceternityIcon order='Phase 3'/>}
-            description=" Description text should be placed inside"
+            description="Rigorous testing across devices and browsers, followed by a smooth deployment — with ongoing support to keep everything running perfectly."
             >
             <CanvasRevealEffect
                 animationSpeed={3}

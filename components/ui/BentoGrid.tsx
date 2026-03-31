@@ -1,9 +1,10 @@
 'use client'
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from './GridGlobe'
+import Image from "next/image";
 import { useState } from "react";
 import dynamic from "next/dynamic";
+const GlobeDemo = dynamic(() => import('./GridGlobe').then((m) => m.GlobeDemo), { ssr: false });
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
@@ -75,9 +76,10 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img 
+            <Image
                 src={img}
                 alt={img}
+                fill
                 className={cn(imgClassName,'object-cover object-center')}
             />
           )}
@@ -85,10 +87,11 @@ export const BentoGridItem = ({
         </div>
           <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
             {spareImg && (
-              <img 
+              <Image
                   src={spareImg}
                   alt={spareImg}
-                  className={'object-cover object-center w-full h-full'}
+                  fill
+                  className={'object-cover object-center'}
               />
             )}    
           </div>
@@ -113,18 +116,18 @@ export const BentoGridItem = ({
 
             {id ===3 &&(
               <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-                <div className="flex flex-col gap3 lg:gap-8">
+                <div className="flex flex-col gap-3 lg:gap-8">
                   {['React.js', 'Next.js', 'Typescript'].map((item)=>(
-                    <span key={item} className="py-2 lg:py4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                    <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                       {item}
                     </span>
                   ))}
                   <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
                 </div>
-                <div className="flex flex-col gap3 lg:gap-8">
+                <div className="flex flex-col gap-3 lg:gap-8">
                   <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
                   {['Python', 'C++', 'Java'].map((item)=>(
-                    <span key={item} className="py-2 lg:py4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                    <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                       {item}
                     </span>
                   ))}
@@ -134,7 +137,7 @@ export const BentoGridItem = ({
 
             {id ===6 && (
               <div className='mt-5 relative'>
-                <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"}`}>
+                <div className="absolute -bottom-5 right-0">
                   <Lottie options={{
                     loop:copied,
                     autoplay:copied,

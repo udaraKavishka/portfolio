@@ -107,33 +107,33 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Udara delivered our platform ahead of schedule with exceptional attention to detail. His ability to translate complex requirements into clean, performant code was impressive. The interactive UI he built has consistently received praise from our users.",
+      name: "Sarah Mitchell",
+      title: "Product Manager at NexaLabs",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Udara was a seamless experience from start to finish. He communicated clearly at every stage, flagged potential issues early, and produced a polished result. Our mobile app retention improved significantly after his work on the UX.",
+      name: "James Tan",
+      title: "CTO at StreamFlow Technologies",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Udara has a rare combination of strong technical skills and a genuine understanding of user experience. He rebuilt our frontend from scratch and the performance gains were remarkable. I would recommend him without hesitation.",
+      name: "Priya Nair",
+      title: "Co-Founder at Orbix Digital",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Udara's work on our 3D visualisation project exceeded every expectation. He proactively suggested optimisations we hadn't considered and delivered pixel-perfect results. A true professional who takes real ownership of his work.",
+      name: "Daniel Ferreira",
+      title: "Lead Designer at VisualCore Studio",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "From the first call to final deployment, Udara was thorough, responsive, and easy to collaborate with. He handled a tight deadline without compromising quality. The codebase he left us is clean, well-structured, and easy for our team to maintain.",
+      name: "Amara Osei",
+      title: "Engineering Lead at BrightPath Solutions",
     },
   ];
   
