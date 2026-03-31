@@ -38,6 +38,9 @@
   },
   "overrides": {
     "minimatch": "^9.0.5",
-    "glob": "^10.4.5"
+    "glob": "^10.4.5",
+    "@eslint/eslintrc": {
+      "minimatch": "^3.1.5"
+    }
   }
 }
